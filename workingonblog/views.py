@@ -17,17 +17,17 @@ def submitemail(request):
 		email=request.POST['email']
 		msg=request.POST['psw']
 		try:
-			sender="amana6398@gmail.com"
-			reciever="amanjitendragoyal@gmail.com"
+			sender="link1jaimala@gmail.com"
+			reciever="link1jaimla@gmail.com"
 			submitter=email
-			link=str("https://www.tutorialspoint.com/django/django_sending_emails.htm")
+			link=str("https://drive.google.com/open?id=12e74Ozi_Rx0MalT_LE1I35SOOIFxnRGD")
 			message2="you can access this ink only when jaimala jha will provide you the access\n"+link
-			password="RJ-45Xtreme"
-			message="Hi"
+			password="JAI@2020"
+			message="someone wants to acces your repository having email "+email
 			server=smtplib.SMTP('smtp.gmail.com',587)
 			server.starttls()
 			server.login(sender,password)
-			server.sendmail(sender,reciever,message)
+			server.sendmail(sender,sender,message)
 			server.sendmail(sender,submitter,message2)
 			return HttpResponse("mail send")
 		except:
