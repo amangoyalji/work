@@ -1,0 +1,118 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  font-family: Arial;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: grey;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: grey;
+   color: white;
+   text-align: center;
+}
+
+.welcome-section {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100vh;
+   background-color: #000;
+   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+      
+.welcome-section > p {
+   font-size: 3rem;
+   font-weight: 200;
+   font-style: italic;
+   color: white;
+}
+
+.welcome-section > h1 {
+   font-size: 3rem;
+   font-weight: 200;
+   font-style: italic;
+   color: white;
+}
+body {
+  background-color: #000000;
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="/">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:right"><a href="/about">About</a></li>
+</ul>
+
+<div class="container">
+  <img src="/static/449941.png" alt="Snow" style="width:100%;">
+  
+  <div class="text-block">
+  <h4>About the Repository</h4>
+    <p>Monuments  image  Repository is a  collection  of images with different categories of India. This repository is useful when any researcher want to do some innovative research on these types of images. it can be useful for the  students, educators, and researchers all over the world whose  primary research concern is Indian monument image dataset. This dataset contain a11 classes of different nbspcategories of the Indian monuments images. It is a perfect place where each category of images contains different types of orientation of the image. Every category contain at least 100 images of each class. Every user can have chance to select dataset category that will be really interesting  for their research. The search is simple here, any user can browse the data sets  directly. This repository is only containing monument images data. Some famous images are TajMahal, Qutub-Minar, India-Gate etc.</p>
+  </div>
+</div>
+<br>
+<div class="footer">
+  <p>designed by Aman agrawal</p>
+</div>
+</body>
+</html> 
